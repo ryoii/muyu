@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="cn.ryoii.muyu.ui.MainToolWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="2083" height="1129"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a806e" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="82514" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="48dcf" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <text value="Auto Hit Duration"/>
+                </properties>
+              </component>
+              <component id="49dc4" class="javax.swing.JSlider" binding="durationSlider">
+                <constraints/>
+                <properties>
+                  <majorTickSpacing value="1000"/>
+                  <maximum value="3100"/>
+                  <minimum value="100"/>
+                  <minorTickSpacing value="100"/>
+                  <paintLabels value="true"/>
+                  <paintTicks value="true"/>
+                  <paintTrack value="true"/>
+                  <snapToTicks value="false"/>
+                  <value value="1000"/>
+                </properties>
+              </component>
+              <component id="2d511" class="javax.swing.JLabel" binding="delayLabel">
+                <constraints/>
+                <properties>
+                  <text value="ms"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5b70d" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="10349" class="javax.swing.JCheckBox" binding="muteCheckBox">
+                <constraints/>
+                <properties>
+                  <text value="Mute"/>
+                </properties>
+              </component>
+              <component id="32f8e" class="javax.swing.JCheckBox" binding="autoCheckBox">
+                <constraints/>
+                <properties>
+                  <text value="Auto Hit"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="65f28" binding="animationPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="adaa0" class="javax.swing.JLabel" binding="pic" custom-create="true">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="15e75" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="959e4" class="javax.swing.JLabel" binding="counterLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="72"/>
+              <text value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
