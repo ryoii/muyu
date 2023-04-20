@@ -4,7 +4,7 @@ import com.intellij.openapi.project.DumbAware;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
 import com.intellij.openapi.wm.ToolWindowFactory;
-import com.intellij.ui.content.ContentFactory;
+import com.intellij.ui.content.ContentManager;
 import com.intellij.util.ImageLoader;
 import org.jetbrains.annotations.NotNull;
 
@@ -121,8 +121,7 @@ public class MainToolWindow implements ToolWindowFactory, DumbAware {
 
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
-        toolWindow.getContentManager().addContent(
-                ContentFactory.SERVICE.getInstance().createContent(mainPanel, "", false)
-        );
+        ContentManager contentManager = toolWindow.getContentManager();
+        contentManager.addContent(contentManager.getFactory().createContent(mainPanel, "", false));
     }
 }
